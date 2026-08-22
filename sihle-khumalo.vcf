@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Sihle Khumalo
+ORG:Sihle Khumalo Attorneys Inc
+TITLE:Legal Practitioner
+TEL;TYPE=WORK,VOICE:+27310233408
+TEL;TYPE=CELL,VOICE:+27765427942
+EMAIL;TYPE=PREF,INTERNET:info@sihlekhumaloattorneysinc.co.za
+ADR;TYPE=WORK:;;Suite 404, Metropolitan Life Building, 391 Anton Lembede Street;Durban;KZN;4001;South Africa
+URL:https://www.sihlekhumaloattorneysinc.co.za
+END:VCARD

@@ -1,0 +1,123 @@
+<?php 
+require_once __DIR__ . '/config.php'; 
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sihle Khumalo Attorneys Inc — Digital Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0}
+        :root{--g:#1B4332;--gm:#2D6A4F;--gold:#B8860B;--gold2:#C9A84C;--cream:#F8F6F1;--white:#fff}
+        
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: flex-start; 
+            justify-content: center;
+            background: var(--g);
+            font-family: 'DM Sans', sans-serif;
+            padding: 1rem; /* Slightly reduced padding for better mobile fit */
+            background-image: repeating-linear-gradient(90deg,rgba(184,134,11,.05) 0,rgba(184,134,11,.05) 1px,transparent 1px,transparent 65px),
+                             repeating-linear-gradient(0deg,rgba(184,134,11,.05) 0,rgba(184,134,11,.05) 1px,transparent 1px,transparent 65px)}
+        
+        .card{width:100%;max-width:400px;background:var(--white);overflow:hidden;box-shadow:0 32px 80px rgba(0,0,0,.45);margin-bottom:2rem;animation:up .8s cubic-bezier(.22,1,.36,1) both}
+        @keyframes up{from{opacity:0;transform:translateY(36px) scale(.97)}to{opacity:1;transform:none}}
+        
+        .card-top{background:var(--cream);padding:1.5rem 2rem 1rem;display:flex;flex-direction:column;align-items:center;position:relative;overflow:hidden;border-bottom:3px solid var(--gold)}
+        .card-logo{width:140px;height:auto;display:block}
+        
+        .card-firm{margin-top:.8rem;text-align:center;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;color:var(--g)}
+        .card-firm-sub{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-top:3px}
+        
+        .name-band{background:var(--g);padding:1rem 1.8rem;border-bottom:1px solid rgba(184,134,11,.2)}
+        .atty-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:400;color:var(--white);text-align:center}
+        .atty-title{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);text-align:center;margin-top:.3rem}
+        
+        .cr{display:flex;align-items:center;gap:.9rem;padding:.75rem 1.6rem;border-bottom:1px solid rgba(27,67,50,.07);text-decoration:none;transition:background .18s;color:inherit}
+        .cr:hover{background:rgba(27,67,50,.04)}
+        .ci{width:34px;height:34px;flex-shrink:0;border:1px solid rgba(184,134,11,.35);display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--gold)}
+        .cl{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gm);opacity:.6}
+        .cv{font-size:13px;color:var(--g);margin-top:1px;line-height:1.3}
+        
+        .cr-wa{background:#f0fdf4;border-left:3px solid #25D366}
+        .cr-wa .ci{border-color:#25D366;color:#25D366}
+        
+        .card-map iframe{width:100%;height:150px;border:none;display:block}
+        
+        .card-foot{background:var(--g);padding:1rem 1.6rem;display:flex;justify-content:space-between;align-items:center;border-top:2px solid var(--gold)}
+        .save-btn{display:flex;align-items:center;gap:7px;padding:.5rem 1.2rem;background:var(--gold);text-decoration:none;font-size:10px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--g)}
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="card-top">
+        <img class="card-logo" src="/images/sk_logo.png" alt="Sihle Khumalo Attorneys Logo">
+        <div class="card-firm">Sihle Khumalo Attorneys Inc</div>
+        <div class="card-firm-sub">Legal Excellence</div>
+    </div>
+
+    <div class="name-band">
+        <div class="atty-name">Sihle Khumalo</div>
+        <div class="atty-title">Director / Attorney</div>
+    </div>
+
+    <div class="card-body">
+        <a href="https://wa.me/27765427942" class="cr cr-wa">
+            <div class="ci">WA</div>
+            <div>
+                <div class="cl">WhatsApp</div>
+                <div class="cv">076 542 7942</div>
+            </div>
+        </a>
+
+        <a href="tel:+27310233408" class="cr">
+            <div class="ci">☏</div>
+            <div>
+                <div class="cl">Office Line</div>
+                <div class="cv">031 023 3408</div>
+            </div>
+        </a>
+
+        <a href="mailto:info@sihlekhumaloattorneysinc.co.za" class="cr">
+            <div class="ci">✉</div>
+            <div>
+                <div class="cl">Primary Email</div>
+                <div class="cv">info@sihlekhumaloattorneysinc.co.za</div>
+            </div>
+        </a>
+
+        <a href="mailto:khumalolaw85@gmail.com" class="cr">
+            <div class="ci">✉</div>
+            <div>
+                <div class="cl">Alternative Email</div>
+                <div class="cv">khumalolaw85@gmail.com</div>
+            </div>
+        </a>
+
+        <div class="cr">
+            <div class="ci">📍</div>
+            <div>
+                <div class="cl">Office Address</div>
+                <div class="cv" style="font-size:12px;">Suite 404, 4th Floor, Metropolitan Life Bldg, 391 Anton Lembede St, Durban</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.252329241517!2d31.021953075253896!3d-29.856983722765365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7a9980d96d74b%3A0x892e62164478496!2s391%20Anton%20Lembede%20St%2C%20Durban%20Central%2C%20Durban%2C%204001!5e0!3m2!1sen!2sza!4v1715421500000" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="card-foot">
+        <a href="sihle-khumalo.vcf" class="save-btn">
+            <span>Save Contact</span>
+        </a>
+        <div style="font-size: 9px; color: rgba(255,255,255,0.4);">Durban, South Africa</div>
+    </div>
+</div>
+
+</body>
+</html>
